@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WirePlayer page</title>
+    <meta charset='utf-8'> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="css/style.css" rel="stylesheet" media="screen"> 
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="page-dashboard">
+    
+    <nav class="navbar navbar-default navbar-blue" role="navigation"> 
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+        </div> 
+        <!-- Start navbar collapse -->
+        <div class="collapse navbar-collapse  navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li> <a>Account ID: <strong>937291</strong></a> </li>
+            <li id="notifications_btn">
+              <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="mob-text">Your incoming messages</span> <span class="glyphicon glyphicon-top-bing"><span class="label label-warning">1</span></span>  
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li> <a href="#">Funds added successfully</a> </li> 
+              </ul>  
+            </li>
+            <li>
+              <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="mob-text">Request for a help</span> <span class="glyphicon glyphicon-top-help"></span>
+              </a>
+                <ul class="dropdown-menu" role="menu">
+                <li> <a href="faq.html">FAQs</a> </li> 
+                <li> <a href="help.html">Contact Support</a> </li>
+              </ul>
+            </li> 
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                John Smith
+                <button class="btn btn-default">
+                  <img src="img/small_avatar.png" alt="" class="avatar">
+                </button>  
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li> <a href="#" title="Account Settings">Account Settings </a> </li> 
+                <li> <a href="#" title="Personal Details">Personal Details </a> </li> 
+                <li> <a href="#" title="Banks Details">Banks Details </a> </li> 
+                <li> <a href="#" title="Logout">Logout</a> </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div> 
+    </nav>
+
+    <nav class="navbar navbar-default navbar-secondary" role="navigation"> 
+      <div class="container"> 
+        <!-- Start navbar collapse -->
+        <div class="collapse navbar-collapse  navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-left">
+              <li><a href="index.html"  title="Send Payment">Dashboard</a></li> 
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Your Wallet">
+                Your Wallet <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li> <a href="#" title="View Accounts"> View Accounts</a> </li>  
+                <li> <a href="#AddFunds" data-toggle="modal" title="Add Funds">Add Funds </a> </li>  
+                <li> <a href="history.html" title="View Transaction History"> View Transaction History</a> </li>    
+              </ul>
+            </li>
+            <li><a href="#SendPayment" data-toggle="modal" title="Send Payment"> Send Payment </a></li> 
+            <li><a href="#RequestPayment" data-toggle="modal" title="Request Payment"> Request Payment </a></li> 
+            <li><a href="#ConvertMoney" data-toggle="modal" title="Convert"> Convert </a></li> 
+            <li><a href="#TravelMoney" data-toggle="modal" title="Travel Money"> Travel Money </a></li> 
+            <li><a href="contacts.html" title="Contacts"> Contacts </a></li> 
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li> <a><strong>Last login:</strong> <i>17 July, 2013</i> 8:16 PM</a> </li> 
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div> 
+    </nav>
+
+    <!-- Main content start -->
+    <div class="container maincontainer">
+      <div class="row mainwrap"> 
+        <!-- Leftcontent start --> 
+        <div id="content" role="main" class="col-sm-12"> 
+
+          <div class="panel panel-default panel-help">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                <span class="text">
+                  Help <span class="glyphicon glyphicon-panel-arrowdown"></span>
+                </span> 
+              </h3>
+            </div>
+            <div class="panel-body white">
+              <h2>The Currency Account Support</h2>
+              <p>Aliquam blanditiis corporis odit ducimus sed nihil impedit vitae eius amet ut ea facilis illo sequi minima nam beatae accusantium neque eveniet.</p>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="well well-featured">
+                    <h4><span class="glyphicon glyphicon-email-support"></span> Email support</h4>
+                    <p>Aliquam blanditiis corporis odit ducimus sed nihil impedit vitae eius.  Aliquam blanditiis corporis odit ducimus sed nihil impedit vitae eius.  </p>
+                    <p>Aliquam blanditiis corporis odit ducimus sed nihil impedit vitae eius.  </p>
+                    <p><strong>Email us at <br> <a href="mailto:sales@wireplayer.com" title="">sales@wireplayer.com</a></strong></p>
+                  </div>
+                </div>
+                <div class="col-sm-8">
+                  <div class="well well-featured">
+                    <h4><span class="glyphicon glyphicon-phone-support"></span>  Phone support</h4>
+                    <p>lorel Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis laborum molestias nulla necessitatibus earum ullam omnis deleniti beatae? Provident porro deleniti eaque soluta aut nostrum ipsam perspiciatis. Quos debitis sunt.</p>
+                    <div class="row phones-list">
+                      <div class="col-sm-6">
+                        <table class="table no-border">
+                          <tr>
+                            <td><strong>United Kingdom</strong></td>
+                            <td>+44 2 8073 3378</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Australia</strong></td>
+                            <td>+44 2 8073 3378</td>
+                          </tr>
+                          <tr>
+                            <td><strong>America</strong></td>
+                            <td>+44 2 8073 3378</td>
+                          </tr>
+                        </table>
+                      </div> 
+                      <div class="col-sm-6">
+                        <table class="table no-border">
+                          <tr>
+                            <td><strong>United Kingdom</strong></td>
+                            <td>+44 2 8073 3378</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Australia</strong></td>
+                            <td>+44 2 8073 3378</td>
+                          </tr>
+                          <tr>
+                            <td><strong>America</strong></td>
+                            <td>+44 2 8073 3378</td>
+                          </tr>
+                        </table>
+                      </div> 
+                    </div><!-- / end .row.phones list -->
+                  </div><!-- / end well-featured --> 
+                </div><!-- / end cell -->
+              </div> <!-- / end main row -->
+              
+          
+              <h3>Heading 1</h3>
+              <p>Lorel Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nemo voluptas laudantium libero quia sit vitae voluptatibus laborum ea porro minus natus fuga illo autem ratione laboriosam ut soluta quas!</p>
+              <h3>Heading 2</h3>
+              <p>Lorel Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nemo voluptas laudantium libero quia sit vitae voluptatibus laborum ea porro minus natus fuga illo autem ratione laboriosam ut soluta quas!</p>
+
+
+
+            </div><!-- / end panel body -->
+          </div> <!-- Panel help ends -->
+        </div> <!-- Leftcontent ends -->
+
+ 
+      </div><!-- Ends main .row --> 
+    </div><!-- Ends main .container -->
+
+    
+    <!-- ***************** POpups start ************** -->
+    <!-- Add funds -->
+    <div class="modal fade" id="AddFunds" tabindex="-5" role="dialog" aria-labelledby="5" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> </button>
+            <h4 class="modal-title">
+              ADD FUNDS <span class="glyphicon glyphicon-panel-arrowdown"></span>
+            </h4>
+          </div>
+          <div class="modal-body">
+             <h4 class="text-center modal-title">You can add funds to your WirePayer account anytime you like, even from bank account in other currencies</h4>
+             <p>To add funds simply select the country your bank account located in from the dropdown below.</p>
+             <p>Once your country is selected, WirePayer bank details will be displayed for that country.</p>
+             <p>Then visit your local bank, or login to your online banking account and transfer your money from your bank account to the WirePayer bank account is listed below.</p>
+             <div class="form-add-funds">
+               <form action="">
+                 <p class="text-center">
+                   <select name="funds" class="form-control" id="funds">
+                     <option value=""><b>GBP</b> (United Kingdom)</option>
+                   </select>
+                 </p>
+                 <p class="text-center">
+                  <button type="button" class="btn btn-default btn-warning btn-styled btn-orange select-currency">Select</button>
+                 </p>
+               </form>
+             </div> 
+              <div class="transaction-info hide">
+                <hr class="dotted">
+                <h4 class="text-center modal-title">WirePayer CAD Account Details</h4>
+                <div class="row">
+                  <div class="col-xs-4 text-right">Account Currency:</div>
+                  <div class="col-xs-8 text-left">CAD</div>
+                </div>        
+                <div class="row">
+                  <div class="col-xs-4 text-right">Account Holder:</div>
+                  <div class="col-xs-8 text-left">WirePayer</div>
+                </div>        
+                <div class="row">
+                  <div class="col-xs-4 text-right">Bank:</div>
+                  <div class="col-xs-8 text-left">Barclay's</div>
+                </div>        
+                <div class="row">
+                  <div class="col-xs-4 text-right">Address:</div>
+                  <div class="col-xs-8 text-left">14th Floor, United Kingdom House, 180 Oxford street, London, W10EA</div>
+                </div>        
+                <div class="row">
+                  <div class="col-xs-4 text-right">Account Number:</div>
+                  <div class="col-xs-8 text-left">12345678</div>
+                </div>        
+                <div class="row">
+                  <div class="col-xs-4 text-right">Sort/Rounting Code:</div>
+                  <div class="col-xs-8 text-left">12-34-56</div>
+                </div>        
+                <div class="row">
+                  <div class="col-xs-4 text-right">IBAN Code:</div>
+                  <div class="col-xs-8 text-left">CAD1234567-7845</div>
+                </div>        
+                <div class="row">
+                  <div class="col-xs-4 text-right">SWIFT/BIC CODE:</div>
+                  <div class="col-xs-8 text-left">BARCG29</div>
+                </div>        
+                <div class="row">
+                  <div class="col-xs-4 text-right">Reference:</div>
+                  <div class="col-xs-8 text-left">A12348 <span class="red"><b>&larr;</b> (Your UserID must be provided) </span></div>
+                </div>        
+              </div> <!-- /transaction info -->
+          </div>
+          <div class="modal-footer hide"> 
+            <button type="button" class="btn btn-default btn-warning btn-styled btn-orange">Email me details</button> 
+            <button type="button" class="btn btn-default btn-warning btn-styled btn-grey" data-dismiss="modal">I'm finished</button> 
+          </div> 
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal --> 
+     
+   <!-- Send payment --> 
+    <div class="modal fade" id="SendPayment" tabindex="-3" role="dialog" aria-labelledby="3" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> </button>
+            <h4 class="modal-title">
+              Send Payment <span class="glyphicon glyphicon-panel-arrowdown"></span>
+            </h4>
+          </div>
+          <div class="modal-body">
+            <!-- Part one -->
+            <div class="transaction-info">
+              <div class="row">
+                <div class="col-xs-4 text-right">Pay Someone:</div>
+                <div class="col-xs-8 text-left" id="payment-steps-type">
+                  <div class="radio-holder"> <label> <input name="curr" class="request_payment" type="radio"> Request payment to one of our beneficaries </label> </div>
+                  <div class="radio-holder"> <label> <input name="curr" class="make_transfer" type="radio"> Make a transfer from your wallet to another WirePayer customer </label> </div>
+                </div>
+              </div> 
+              <hr class="divider">
+  
+            <!-- part one ends -->
+              <div class="part-one">
+                <div class="row">
+                  <div class="col-xs-4 text-right lh34">Beneficiary</div>
+                  <div class="col-xs-8 text-left">
+                    <select name="select" class="form-control" id="select">
+                      <option value="Fredd blogs - AUD - Australian Dollar, Australia">Fredd blogs - <b>AUD</b> - Australian Dollar, Australia</option>
+                      <option value="Fredd blogs - AUD - Australian Dollar, Australia">Fredd blogs - <b>AUD</b> - Australian Dollar, Australia</option>
+                      <option value="Fredd blogs - AUD - Australian Dollar, Australia">Fredd blogs - <b>AUD</b> - Australian Dollar, Australia</option>
+                    </select>
+                  </div>
+                </div> 
+                <div class="row">
+                  <div class="col-xs-4"></div>
+                  <div class="col-xs-8 text-left">
+                    <div class="btn-row">
+                      <a href="#AddContact" data-dismiss="modal" data-toggle="modal" title="" class="btn btn-default btn-work">+ Add New</a>
+                      <a href="#" title="" class="btn btn-default btn-work">Edit</a>
+                      <a href="#" title="" class="btn btn-default btn-work">Delete</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4"></div>
+                  <div class="col-xs-8 text-left">
+                    <div class="well well-summary">
+                      <div class="row">
+                        <div class="col-xs-5 text-right">Payee Name:</div>
+                        <div class="col-xs-7 text-left"> Fredd Blogs </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-5 text-right">Currency:</div>
+                        <div class="col-xs-7 text-left"> AUD - Australian Dollar</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-5 text-right">Country:</div>
+                        <div class="col-xs-7 text-left"> AU -  Australia </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-5 text-right"> Sort/Routing Code: </div>
+                        <div class="col-xs-7 text-left"> 56543 </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-5 text-right">Account Number:</div>
+                        <div class="col-xs-7 text-left"> 434343 </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-5 text-right">IBAN:</div>
+                        <div class="col-xs-7 text-left"> 424242424242 </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-5 text-right">Payee Reference:</div>
+                        <div class="col-xs-7 text-left"> Reference </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4 text-right">Payment type:</div>
+                  <div class="col-xs-8 text-left">
+                    <div class="radio-holder"> <label> <input name="payment-type" type="radio"> Non-urgent payment </div>
+                    <div class="radio-holder"> <label> <input name="payment-type" type="radio"> Urgent payment </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4 text-right">Fe paid by:</div>
+                  <div class="col-xs-8 text-left">
+                    <div class="radio-holder"> <label> <input name="paid-type" type="radio"> Sender pays the fees </div>
+                    <div class="radio-holder"> <label> <input name="paid-type" type="radio"> Beneficary  pays the fees </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4 text-right">By order currency:</div>
+                  <div class="col-xs-8 text-left">
+                    <div class="radio-holder"> <label> <input name="order-type" type="radio">By order currency </div>
+                    <div class="radio-holder"> <label> <input name="order-type" type="radio">By GBP currency </div>
+                    <div class="alert alert-info-grey">You have <b>AUD 28,246.00</b> in your <b>AUD</b> wallet partition.</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4 text-right lh34">Amount:</div>
+                  <div class="col-xs-8 text-left">
+                    <div class="col-lg-3">
+                      <input type="text" name="" id="" value="4000" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4 text-right lh34">Send Pays Fees:</div>
+                  <div class="col-xs-8 text-left lh34"> 6.07 GBP </div>
+                </div>
+              </div>
+            <!-- /part one ends -->
+            <!-- Part two --> 
+              <div class="part-two hide">
+                <div class="row">
+                  <div class="col-xs-4 text-right">Enter Other Customer's Email or WirePayer id:</div>
+                  <div class="col-xs-8 text-left">
+                    <input type="text" name="" id="" value="" class="form-control"> 
+                    <div class="btn-row"> <a href="#" title="" class="btn btn-default btn-work">Confrim WirePayer Account</a> </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4 text-right">Recepient's name:</div>
+                  <div class="col-xs-8 text-left">
+                    <p>&nbsp;</p>
+                    <div class="well well-summary col-lg-7"> 
+                      <p><strong>AUD:</strong> 3,186.41</p> 
+                      <p><strong>USD:</strong> 1,805.52</p>  
+                      <p><strong>EUR:</strong> 71,921.59</p>  
+                      <p><strong>GBP:</strong> 50,400.59</p> 
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4 text-right">Fee currency:</div>
+                  <div class="col-xs-8 text-left">
+                    <div class="radio-holder"> <label> <input name="order-type" type="radio">By order currency </div>
+                    <div class="radio-holder"> <label> <input name="order-type" type="radio">By GBP currency </div> 
+                  </div>
+                </div>   
+                <div class="row">
+                  <div class="col-xs-4 text-right lh34">Amount:</div>
+                  <div class="col-xs-8 text-left"> 
+                    <div class="convert-block short small-convert"> 
+                      <div class="row"> 
+                        <div class="col-xs-6"> 
+                          <div class="btn-group switched">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> AUD <span class="caret"></span> </button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">EUR</a></li>
+                              <li><a href="#">GBP</a></li>
+                            </ul>
+                          </div>  
+                        </div>
+                        <div class="col-xs-6"> <input type="text" name="text" class="form-control" value="5000" id=""> </div>
+                      </div> 
+                    </div>   
+                    <div class="alert alert-info-grey">You have <b>AUD 28,246.00</b> in your <b>AUD</b> wallet partition.</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4 text-right lh34">Send Pays Fees:</div>
+                  <div class="col-xs-8 text-left lh34"> 6.07 GBP </div>
+                </div>
+              </div>
+            <!-- /part two ends -->
+
+            </div> 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-warning btn-styled btn-orange" data-dismiss="modal">Send</button> 
+            <button type="button" class="btn btn-default btn-warning btn-styled btn-grey" data-dismiss="modal">Cancel</button> 
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal --> 
+    <!--  Ends send payment  -->
+    
+        <!-- Request payment -->
+    <div class="modal fade" id="RequestPayment" tabindex="-4" role="dialog" aria-labelledby="4" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> </button>
+            <h4 class="modal-title">
+              TRANSACTION HISTORY <span class="glyphicon glyphicon-panel-arrowdown"></span>
+            </h4>
+          </div>
+          <div class="modal-body">
+            <div class="transaction-info">
+              <div class="row">
+                <div class="col-xs-4 text-right lh34">Request payment from:</div>
+                <div class="col-xs-8 text-left">
+                  <select name="select" class="form-control" id="select">
+                    <option value="Fredd blogs - AUD - Australian Dollar, Australia">Fredd blogs - <b>AUD</b> - Australian Dollar, Australia</option>
+                    <option value="Fredd blogs - AUD - Australian Dollar, Australia">Fredd blogs - <b>AUD</b> - Australian Dollar, Australia</option>
+                    <option value="Fredd blogs - AUD - Australian Dollar, Australia">Fredd blogs - <b>AUD</b> - Australian Dollar, Australia</option>
+                  </select>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-8 text-left">
+                  <div class="btn-row">
+                    <a href="#" title="" class="btn btn-default btn-work">+ Add New</a>
+                    <a href="#" title="" class="btn btn-default btn-work">Edit</a>
+                    <a href="#" title="" class="btn btn-default btn-work">Delete</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-8 text-left">
+                  <div class="well well-summary">
+                    <div class="row">
+                      <div class="col-xs-5 text-right">Payee Name:</div>
+                      <div class="col-xs-7 text-left"> Fredd Blogs </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-5 text-right">Currency:</div>
+                      <div class="col-xs-7 text-left"> AUD - Australian Dollar</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-5 text-right">Country:</div>
+                      <div class="col-xs-7 text-left"> AU -  Australia </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-5 text-right"> Sort/Routing Code: </div>
+                      <div class="col-xs-7 text-left"> 56543 </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-5 text-right">Account Number:</div>
+                      <div class="col-xs-7 text-left"> 434343 </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-5 text-right">IBAN:</div>
+                      <div class="col-xs-7 text-left"> 424242424242 </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-5 text-right">Payee Reference:</div>
+                      <div class="col-xs-7 text-left"> Reference </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row wide-row">
+                <div class="col-xs-4 text-right lh34">Amount:</div>
+                <div class="col-xs-8 text-left">
+                  <div class="col-lg-3">
+                    <input type="text" name="" id="" value="4000" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4 text-right lh34">Send Pays Fees:</div>
+                <div class="col-xs-8 text-left lh34"> 6.07 GBP </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4 text-right">My reference:</div>
+                <div class="col-xs-8 text-left"> XJ 20103 </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-warning btn-styled btn-orange" data-dismiss="modal">Send</button> 
+            <button type="button" class="btn btn-default btn-warning btn-styled btn-grey" data-dismiss="modal">Cancel</button> 
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal --> 
+
+
+
+    <!-- Convert Money --> 
+    <div class="modal fade" id="ConvertMoney" tabindex="-1" role="dialog" aria-labelledby="1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> </button>
+            <h4 class="modal-title">
+              Convert Money <span class="glyphicon glyphicon-panel-arrowdown"></span>
+            </h4>
+          </div>
+          <div class="modal-body">
+             <p>Enter the currency and amount you wish to convert from and into</p>
+             <p>Please note that once you convert, the transaction will be carried imediately. There's no way you can undo it!</p>
+              
+              <div class="convert-block convert-action"> 
+                <h5 class="convert-title row"> <span class="pull-left"> Convert </span> <span class="pull-right"> Rate EUR <strong>1.1623</strong> </span> </h5>
+                <div class="row"> 
+                  <div class="col-xs-10"> <input type="text" name="text" class="form-control" value="Exchange Now!" id=""> </div>
+                  <div class="col-xs-2"> 
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">   <span class="caret"></span> </button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#" id="exchange-now-link">Exchange Now</a></li>
+                        <li><a href="#" id="peer-to-peer-link">Peer-to-Peer</a></li>
+                      </ul>
+                    </div>  
+                  </div>
+                </div>  
+                <p class="text-right"><a href="#" data-toggle="tooltip" data-placement="right" data-original-title="Lotel Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur laborum maxime vero ut a commodi repellat explicabo incidunt id itaque non est nobis provident reiciendis obcaecati eum ex molestiae expedita." class="Tooltip" title="">What is this?</a></p>
+              </div> <!-- Convert block ends -->
+              <hr class="dotted mb3">
+              <div class="convert-block convert-in-modal"> 
+                <h5 class="convert-title row"> <span class="pull-left"> Convert </span> <span class="pull-right"> Rate EUR <strong>1.1623</strong> </span> </h5>
+                <div class="row"> 
+                  <div class="col-xs-6"> 
+                    <div class="btn-group switched">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> EUR <span class="caret"></span> </button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">EUR</a></li>
+                        <li><a href="#">GBP</a></li>
+                      </ul>
+                    </div>  
+                  </div>
+                  <div class="col-xs-6"> <input type="text" name="text" class="form-control" value="5000" id=""> </div>
+                </div> 
+              </div> <!-- Convert block ends --> 
+              <div class="divider_bgd in-modal"> <hr class="divider"> </div> 
+              <div class="convert-block convert-in-modal"> 
+                <h5 class="convert-title row"> <span class="pull-left"> To </span> <span class="pull-right"> Rate GBP <strong>1.1623</strong> </span> </h5> 
+                <div class="row">
+                  <div class="col-xs-6"> 
+                    <div class="btn-group switched">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> EUR <span class="caret"></span> </button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">EUR</a></li>
+                        <li><a href="#">GBP</a></li>
+                      </ul>
+                    </div>  
+                  </div>
+                  <div class="col-xs-6"> <input type="text" name="text" class="form-control" value="5000" id=""> </div>
+                </div> 
+              </div> <!-- Convert block ends -->
+              <div class="convert-block convert-in-modal convert-peer-to-peer hide"> 
+                <h5 class="convert-title row"> <span class="pull-left"> Exchange rate </span> </h5> 
+                <div class="row">
+                  <div class="col-xs-6"> 
+                    <div class="btn-group switched">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> EUR/GBP <span class="caret"></span> </button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">EUR/GBP</a></li>
+                        <li><a href="#">GBP/EUR</a></li>
+                      </ul>
+                    </div>  
+                  </div>
+                  <div class="col-xs-6"> <input type="text" name="text" class="form-control" value="5000" id=""> </div>
+                </div> 
+              </div> <!-- Convert block ends --> 
+              <div class="alert alert-warning fade in">
+                <strong> <span class="glyphicon glyphicon-warn"></span> Warning:</strong> this action can not be undone! 
+              </div> 
+          </div>
+          <div class="modal-footer"> 
+            <button type="button" class="btn btn-default btn-warning btn-block btn-styled btn-orange">CONVERT</button>  
+
+            <div class="hide">
+              <button type="button" class="btn btn-default btn-warning btn-styled btn-orange">Convert another</button> 
+              <button type="button" class="btn btn-default btn-warning btn-styled btn-grey" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+           
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal --> 
+    <!-- Ends convert money -->
+     
+
+
+    <!-- Travel money -->
+    <div class="modal fade" id="TravelMoney" tabindex="-2" role="dialog" aria-labelledby="2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> </button>
+            <h4 class="modal-title">
+              TRAVEL MONEY <span class="glyphicon glyphicon-panel-arrowdown"></span>
+            </h4>
+          </div>
+          <div class="modal-body">
+            <!--  Part one -->
+            <div class="transaction-info part-one">
+              <div class="row">
+                <div class="col-xs-4 text-right lh40">Your Order:</div>
+                <div class="col-xs-8 text-left"> 
+                  <div class="convert-block short small-convert"> 
+                    <div class="row"> 
+                      <div class="col-xs-6"> 
+                        <div class="btn-group switched">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> AUD <span class="caret"></span> </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">EUR</a></li>
+                            <li><a href="#">GBP</a></li>
+                          </ul>
+                        </div>  
+                      </div>
+                      <div class="col-xs-6"> <input type="text" name="text" class="form-control" value="5000" id=""> </div>
+                    </div> 
+                  </div> 
+                  <div class="alert alert-info-grey">You have <b>AUD 28,246.00 </b> in your <b>AUD</b> wallet partition.</div>
+                </div>
+              </div>  
+              <div class="row">
+                <div class="col-xs-4 text-right lh40 ">Your Wallet:</div>
+                <div class="col-xs-8 text-left">
+                  <div class="well well-summary"> 
+                    <p><strong>AUD:</strong> 3,186.41</p> 
+                    <p><strong>USD:</strong> 1,805.52</p>  
+                    <p><strong>EUR:</strong> 71,921.59</p>  
+                    <p><strong>GBP:</strong> 50,400.59</p> 
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4 text-right">Required Delivery Date:</div>
+                <div class="col-xs-8 text-left"> 
+                  <div class="radio-holder"> <label> <input name="day" type="radio"> Saturday, 29 June* </label> </div> 
+                  <div class="radio-holder"> <label> <input name="day" type="radio"> Monday, 01 July* </label> </div> 
+                  <div class="radio-holder"> <label> <input name="day" type="radio"> Tuesday, 02 July* </label> </div> 
+                  <div class="radio-holder"> <label> <input name="day" type="radio"> Wednesday, 03 July*</label> </div>
+                  <div class="radio-holder"> <label> <input name="day" type="radio"> Thursday, 04 July*</label>  </div>
+                  <div class="alert alert-info-grey">Saturday delivery incurs an additional charge of <b>USD 4.58</b>.</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4 text-right lh34">Denominations:</div>
+                <div class="col-xs-8 text-left">
+                  <select name="" id="" class="form-control">
+                    <option value="Mixed Notes">Mixed Notes</option>
+                  </select>
+                   <div class="alert alert-info-grey">We will endavour to provide the denominations requests but cannot guarantee that these will available. </div> 
+                </div>
+              </div>
+              <div class="row wide-row">
+                <div class="col-xs-4 text-right lh43">Emergency Cover:</div>
+                <div class="col-xs-8 text-left"> 
+                    <div class="radio-holder"> <label> <input type="radio"> I require an <a href="#" title="">emergency cover</a> </label> </div> 
+                    <div class="alert alert-info-grey">Emergency cover incurs and additional charge of USD <b>USD 18.33</b> </div>
+                </div>
+              </div> 
+              <div class="row wide-row">
+                <div class="col-xs-4 text-right">Fee payment currency:</div>
+                <div class="col-xs-8 text-left"> 
+                    <div class="radio-holder"> <label> <input name="curr" type="radio"> By order currency </label> </div> 
+                    <div class="radio-holder"> <label> <input name="curr" type="radio"> By GBP currency </label> </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Part two -->
+            <div class="transaction-info part-two hide">
+              <div class="well well-summary well-one">
+                <p>You are about to submit the following Travel Money order:</p>
+                <div class="row big-size">
+                  <div class="col-xs-4 text-right">Amount:</div>
+                  <div class="col-xs-8 text-left"> USD 1,700.00  </div>
+                </div>
+                <div class="row big-size">
+                  <div class="col-xs-4 text-right">Demonimations:</div>
+                  <div class="col-xs-8 text-left"> Mized Notes </div>
+                </div>
+                <div class="row big-size">
+                  <div class="col-xs-4 text-right">Delivered on:</div>
+                  <div class="col-xs-8 text-left"> Tuesday 02 J0ly </div>
+                </div>
+                <div class="row big-size">
+                  <div class="col-xs-4 text-right">Fees:</div>
+                  <div class="col-xs-8 text-left">   </div>
+                </div>
+                <div class="row big-size">
+                  <div class="col-xs-4 text-right">Order fees:</div>
+                  <div class="col-xs-8 text-left"> USD 50.06 </div>
+                </div>
+                <div class="row big-size">
+                  <div class="col-xs-4 text-right">Total fees:</div>
+                  <div class="col-xs-8 text-left"> USD 50.06 </div>
+                </div>
+              </div> 
+              <div class="well well-summary well-two hide">
+                <p class="stretch">Your Travel Money Order request has been processed. Your wallet has been debited by USD <b>1,700.00 </b> and <b>GBP 50.96</b>, and placed in a pending account.  </p>
+                <p>Reference iD is: <b>2NG25389B</b> </p>
+              </div>
+              <p>Please note that the Travel Money will be delivered in <span class="red">cash</span> to the following address: <br> <strong>The Farthings, Sandpits Lane, Penn, HP108HD</strong></p>
+          </div>
+        </div><!-- /.modal-content -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-warning btn-styled btn-orange btn-step-1">Send</button> 
+          <button type="button" class="btn btn-default btn-warning btn-styled btn-grey" data-dismiss="modal">Cancel</button> 
+        </div>
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal --> 
+    </div><!-- End travel money -->
+    
+    <!-- Add contact -->
+    <div class="modal fade" id="AddContact" tabindex="-9" role="dialog" aria-labelledby="9" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form  action="" method="post" id="homeForm">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> </button>
+            <h4 class="modal-title">
+              ADD CONTACT <span class="glyphicon glyphicon-panel-arrowdown"></span>
+            </h4>
+          </div>
+          <div class="modal-body">
+            <div class="transaction-info">
+              <div class="row">
+                <div class="col-xs-4 text-right lh34 light">Payee name:</div>
+                <div class="col-xs-8 text-left">
+                  <input type="text" name="" id="" placeholder="John Doe" value="" class="form-control">           
+                </div>
+              </div>   
+              <div class="row">
+                <div class="col-xs-4 text-right lh34 light">Email:</div>
+                <div class="col-xs-8 text-left">
+                  <input type="email" name="inputEmail" id="Email_validate" placeholder="some@example.com" value="" class="form-control">       
+                  <label for="inputEmail" generated="true" class="error hide"> <i></i> Email must be in valid format! </label>
+                </div>
+              </div>   
+              <div class="row">
+                <div class="col-xs-4 text-right lh34 light">Currency:</div>
+                <div class="col-xs-8 text-left">
+                  <select name="select" class="form-control" id="select">
+                    <option value="">Please make your choice</option>
+                    <option value="Fredd blogs - AUD - Australian Dollar, Australia">Fredd blogs - <b>AUD</b> - Australian Dollar, Australia</option>
+                    <option value="Fredd blogs - AUD - Australian Dollar, Australia">Fredd blogs - <b>AUD</b> - Australian Dollar, Australia</option>
+                    <option value="Fredd blogs - AUD - Australian Dollar, Australia">Fredd blogs - <b>AUD</b> - Australian Dollar, Australia</option>
+                  </select>                   
+                </div>
+              </div>   
+              <div class="row">
+                <div class="col-xs-4 text-right lh34 light">Country:</div>
+                <div class="col-xs-8 text-left">
+                  <select name="select" class="form-control" id="select">
+                    <option value="">Please make your choice</option>
+                    <option value="Australia" > Australia</option> 
+                    <option value="USA"> USA</option> 
+                    <option value="Canada"> Canada</option> 
+                  </select>                   
+                </div>
+              </div> 
+              <div class="row">
+                <div class="col-xs-4 text-right lh34 light">Phone:</div>
+                <div class="col-xs-8 text-left">
+                  <input type="text" name="" id="" placeholder="123456789" value="" class="form-control">                   
+                </div>
+              </div>    
+              <div class="row">
+                <div class="col-xs-4 text-right lh34 light">Address:</div>
+                <div class="col-xs-8 text-left">
+                  <input type="text" name="" id="" placeholder="John Doe" value="H. No 6, Street No 7" class="form-control">                   
+                </div>
+              </div>    
+              <div class="row">
+                <div class="col-xs-4 text-right lh34 light">Company Name:</div>
+                <div class="col-xs-8 text-left">
+                  <input type="text" name="" id="" placeholder="Microsoft" value="" class="form-control">             
+                </div>
+              </div>
+              <h3 class="separate-header">Bank Details</h3> 
+              <div class="row">
+                <div class="col-xs-4 text-right lh34 light">Sort/Rounting Code:</div>
+                <div class="col-xs-8 text-left">
+                  <input type="text" name="" id="" placeholder="5543345" value="" class="form-control"> 
+                </div>
+              </div>   
+              <div class="row">
+                <div class="col-xs-4 text-right lh34 light">Account Number:</div>
+                <div class="col-xs-8 text-left">
+                  <input type="text" name="" id="" placeholder="46537" value="" class="form-control">                   
+                </div>
+              </div>   
+              <div class="row">
+                <div class="col-xs-4 text-right lh34 light">IBAN:</div>
+                <div class="col-xs-8 text-left">
+                  <input type="text" name="" id="" placeholder="5432" value="" class="form-control">                   
+                </div>
+              </div> 
+            </div>
+          </div>
+          <div class="modal-footer"> 
+            <button type="button" class="btn btn-default btn-warning btn-styled btn-orange">Add</button> 
+            <button type="button" class="btn btn-default btn-warning btn-styled btn-grey" data-dismiss="modal">Cancel</button> 
+          </div>          
+          </form>  
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal --> 
+    
+    <!-- **** Here are the popups ends **** -->
+    <!-- ***************************** --> 
+    
+
+    <script src="js/jquery.js"></script> 
+    <script src="js/bootstrap.js"></script> 
+    <script src="js/bootstrap-datepicker.js"></script> 
+    <script src="js/custom.js"></script> 
+  </body>
+</html>
